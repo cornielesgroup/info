@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cornieles Group | Protege lo que estás construyendo</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--green:#0f5132;
+--light-green:#198754;
+--bg:#f7faf7;
+--dark:#212529;
+--white:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:white;
+color:var(--dark);
+line-height:1.6;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:white;
+box-shadow:0 2px 10px rgba(0,0,0,.08);
+z-index:1000;
+}
+
+.navbar{
+max-width:1200px;
+margin:auto;
+padding:18px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+font-size:1.6rem;
+font-weight:800;
+color:var(--green);
+}
+
+.nav-links{
+display:flex;
+gap:25px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#333;
+font-weight:600;
+}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1600&q=80");
+background-size:cover;
+background-position:center;
+color:white;
+padding:120px 20px 60px;
+}
+
+.hero-content{
+max-width:1200px;
+margin:auto;
+width:100%;
+}
+
+.hero h1{
+font-size:4rem;
+max-width:800px;
+font-weight:800;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:700px;
+margin-bottom:35px;
+}
+
+.btn{
+display:inline-block;
+background:var(--light-green);
+padding:15px 30px;
+border-radius:8px;
+text-decoration:none;
+color:white;
+font-weight:700;
+transition:.3s;
+}
+
+.btn:hover{
+background:var(--green);
+transform:translateY(-2px);
+}
+
+.section{
+padding:90px 20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.section-title{
+text-align:center;
+font-size:2.4rem;
+margin-bottom:15px;
+color:var(--green);
+}
+
+.section-subtitle{
+text-align:center;
+max-width:700px;
+margin:auto;
+margin-bottom:50px;
+color:#666;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.card h3{
+color:var(--green);
+margin-bottom:15px;
+}
+
+.process{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.step{
+background:var(--bg);
+padding:35px;
+border-radius:15px;
+text-align:center;
+}
+
+.step-number{
+width:60px;
+height:60px;
+border-radius:50%;
+background:var(--light-green);
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:auto;
+font-size:1.5rem;
+font-weight:700;
+margin-bottom:15px;
+}
+
+.contact{
+background:var(--bg);
+}
+
+form{
+max-width:750px;
+margin:auto;
+display:grid;
+gap:15px;
+}
+
+input,
+textarea{
+padding:15px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:16px;
+}
+
+button{
+padding:15px;
+border:none;
+background:var(--light-green);
+color:white;
+font-size:16px;
+font-weight:700;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+background:var(--green);
+}
+
+.faq-item{
+background:white;
+padding:25px;
+margin-bottom:15px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+footer{
+background:var(--green);
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+footer p{
+margin-bottom:10px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.nav-links{
+display:none;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<nav class="navbar">
+<div class="logo">Cornieles Group</div>
+
+<div class="nav-links">
+<a href="#servicios">Servicios</a>
+<a href="#proceso">Proceso</a>
+<a href="#faq">FAQ</a>
+<a href="#contacto">Contacto</a>
+</div>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>
+Protege lo que estás construyendo
+</h1>
+
+<p>
+Ayudamos a familias, emprendedores y dueños de negocios
+a proteger su futuro financiero mediante estrategias de
+protección, planificación y seguridad a largo plazo.
+</p>
+
+<a href="#contacto" class="btn">
+Agendar Consulta Gratuita
+</a>
+
+</div>
+
+</section>
+
+<section id="servicios" class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Nuestros Servicios
+</h2>
+
+<p class="section-subtitle">
+Soluciones diseñadas para proteger lo más importante:
+tu familia, tu patrimonio y tu tranquilidad.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Protección Familiar</h3>
+<p>
+Planes de protección financiera para tu familia y seres queridos.
+</p>
+</div>
+
+<div class="card">
+<h3>Beneficios en Vida</h3>
+<p>
+Opciones que pueden ayudarte durante situaciones inesperadas.
+</p>
+</div>
+
+<div class="card">
+<h3>Planificación Financiera</h3>
+<p>
+Estrategias para fortalecer tu futuro y objetivos financieros.
+</p>
+</div>
+
+<div class="card">
+<h3>Protección de Negocios</h3>
+<p>
+Soluciones para continuidad y estabilidad empresarial.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="proceso" class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Nuestro Proceso
+</h2>
+
+<p class="section-subtitle">
+Simple, transparente y enfocado en tus necesidades.
+</p>
+
+<div class="process">
+
+<div class="step">
+<div class="step-number">1</div>
+<h3>Escuchamos</h3>
+<p>
+Comprendemos tus metas, preocupaciones y prioridades.
+</p>
+</div>
+
+<div class="step">
+<div class="step-number">2</div>
+<h3>Evaluamos</h3>
+<p>
+Analizamos distintas alternativas y oportunidades.
+</p>
+</div>
+
+<div class="step">
+<div class="step-number">3</div>
+<h3>Implementamos</h3>
+<p>
+Tú decides el camino que mejor se adapta a tu situación.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="faq" class="section">
+
+<div class="container">
+
+<h2 class="section-title">
+Preguntas Frecuentes
+</h2>
+
+<div class="faq-item">
+<h3>¿La consulta inicial tiene costo?</h3>
+<p>No. La consulta inicial es completamente gratuita.</p>
+</div>
+
+<div class="faq-item">
+<h3>¿Trabajan con familias y negocios?</h3>
+<p>Sí. Ofrecemos estrategias personalizadas para ambos casos.</p>
+</div>
+
+<div class="faq-item">
+<h3>¿La reunión puede hacerse por Zoom?</h3>
+<p>Sí. Las consultas virtuales son una de nuestras opciones principales.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contacto" class="section contact">
+
+<div class="container">
+
+<h2 class="section-title">
+Agenda tu Consulta
+</h2>
+
+<p class="section-subtitle">
+Completa el formulario y nos pondremos en contacto contigo.
+</p>
+
+<form>
+
+<input type="text" placeholder="Nombre completo" required>
+
+<input type="email" placeholder="Correo electrónico" required>
+
+<input type="tel" placeholder="Teléfono">
+
+<textarea rows="5" placeholder="¿Cómo podemos ayudarte?"></textarea>
+
+<button type="submit">
+Enviar Solicitud
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<footer>
+
+<p><strong>Cornieles Group</strong></p>
+
+<p>
+Protegiendo lo que más importa.
+</p>
+
+<p>
+© 2026 Todos los derechos reservados.
+</p>
+
+</footer>
+
+</body>
+</html>
